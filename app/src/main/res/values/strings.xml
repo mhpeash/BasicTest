@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BasicTest</string>
+    <string name="title_play_default_url">Play Default</string>
 </resources>
