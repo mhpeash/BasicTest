@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.shurjomukhi.basictest"
-        minSdkVersion 26
+        minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -17,10 +17,6 @@ android {
         }
     }
 
-
-//    compileOptions {
-//        targetCompatibility JavaVersion.VERSION_1_8
-//    }
 }
 
 
@@ -32,14 +28,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    //Exo Player
-    implementation 'com.google.android.exoplayer:exoplayer:2.10.4'
-    implementation 'org.jsoup:jsoup:1.10.3'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.4'
-    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.4'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.4'
 
-//    // code generator for view
-//    implementation "com.jakewharton:butterknife:8.8.1"
-//    annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+
+
 }
