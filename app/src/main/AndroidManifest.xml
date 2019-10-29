@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Q3.VideoPlayer"></activity>
         <activity android:name=".Q1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
