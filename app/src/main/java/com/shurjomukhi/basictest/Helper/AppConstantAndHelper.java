@@ -1,5 +1,8 @@
 package com.shurjomukhi.basictest.Helper;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.util.Log;
 
 public class AppConstantAndHelper {
@@ -20,5 +23,12 @@ public class AppConstantAndHelper {
         Log.d("______________ "+resultTitle,"____________________________________"+"\n\n\n\n\n\n\n\n\n");
         Log.d(resultTitle, result+"\n\n\n\n\n\n\n\n\n");
         Log.d("_________________ ","____________________________________");
+    }
+
+
+    public static boolean IsNetworkAvailable(Context context) {
+        ConnectivityManager manager =(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo actNetwork = manager.getActiveNetworkInfo();
+        return actNetwork != null && actNetwork.isConnectedOrConnecting();
     }
 }
